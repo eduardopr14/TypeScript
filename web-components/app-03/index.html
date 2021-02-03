@@ -1,0 +1,26 @@
+<script>
+    import 'node_modules/@spectrum-web-components/banner/sp-banner.js';
+    import { Banner } from 'node_modules/@spectrum-web-components/banner';
+</script>
+
+<sp-banner>
+    <div slot="header">Header text</div>
+    <div slot="content">Content of the banner</div>
+</sp-banner>
+
+<sp-banner type="info">
+    <div slot="header">This is an info banner</div>
+    <div slot="content">Description here</div>
+</sp-banner>
+
+<sp-banner type="error">
+    <div slot="header">This is an error banner</div>
+    <div slot="content">Something bad happened</div>
+</sp-banner>
+
+<div style="width: 300px; height: 100px; background-color: #ba598b; position: relative;">
+    <sp-banner corner>
+        <div slot="header">This banner is in a corner</div>
+        <div slot="content">Neat!</div>
+    </sp-banner>
+</div>
